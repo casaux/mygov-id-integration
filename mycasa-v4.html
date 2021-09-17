@@ -64,37 +64,26 @@
 			 			<div class="col-lg-6 col-xs-12">
 			<header class="au-header" role="banner">
 				<h1 class="au-header-heading">myCASA</h1>
-				<span class="au-header-subline">Sign in or create an account to access myCASA.</span>
-
-
-<div class="au-form-group">
+				<span class="au-header-subline">Choose how to sign in or create an account to access myCASA using these two options.</span>
+                <div class="au-form-group">
     <div class="au-card au-body">
 <div class="au-body au-body--alt au-card__header">
-    <h4>Sign in or create an account using your Digital Identity <span class="badge badge-beta">beta</span></h4>
+    <h4>Using your Digital Identity <span class="badge badge-beta">beta</span></h4>
 </div>
     <div class="au-card__inner">
-         <p>To access myCASA services you will need an <strong>aviation reference number</strong> (<abbr title="aviation reference number">ARN</abbr>) 
+         <p>To access myCASA services you will need a myCASA account, an <strong>aviation reference number</strong> (<abbr title="aviation reference number">ARN</abbr>) 
 						and <strong>verify your identity</strong>. </p><br>
         <a class="au-btn" href="loading-identity-gov-au-8.html">Continue with Digital Identity</a><br>
         <p><!--You need to <a href="welcome-interstitial-3.html">create a myCASA account</a>, if you don't have one.<br>-->
            
             
         Your digital identity email must match your myCASA account email.</p>
-        <p>Don't have a myCASA account? That's okay, one will be created as part of your first sign in.</p><br>
+        <p><strong>Don't have a myCASA account?</strong> That's okay, one will be created as part of your first sign in.</p>
+        <p><strong><a href="https://www.mygovid.gov.au/set-up">Standard identity strength</a></strong> using digital identity is required to access all services.</p> <br>
         <a href="https://digitalidentity.gov.au" class="casa-external">What is Digital Identity?</a><br>
                                 <a href="https://mygovid.gov.au" class="casa-external">What is myGovID?</a>
         
-        <p>Alternatively, <a href="mycasa-alt.html">sign in using your myCASA login details</a></p>
-        
-    </div>
-</div>
-                            </div>
-                
-           <div class="au-form-group">
-				
-				
-					<div class="au-callout" aria-label="Callout description1">
-                        <h4>Foreign nationals</h4>
+         <!--<h4>Foreign nationals</h4>
 
 
                     
@@ -104,11 +93,54 @@
 
 					<p>
 				<a class="au-cta-link" href="welcome-interstitial-5.html">I can't obtain digital identity</a>
-                        </p>
-				
-				
-                    </div>    
+                        </p>-->
+        
+    </div>
+</div>
                 </div>
+                <h4>Or, using your myCASA sign in details</h4>
+				<p class="au-body"><strong>Not registered?</strong> <a href="01-createb2c-1-3.html">Create an account</a>.
+</p>
+
+			</header>
+
+			<form class="validateform" id="signinForm" method="get" action="profile-dashboard.html">
+
+
+
+				<label for="text-input-block">Email address</label>
+				<input class="au-text-input au-text-input--block" name="email" id="email" type="text" value="" >
+
+				<br />
+
+				<label for="text-input-block">Password</label>
+				<input class="au-text-input au-text-input--block" name="password" id="password" type="password" value="" >
+
+
+
+
+<p><a href="#">Problems signing in?</a></p>
+			<br>
+
+			</form>
+
+			<a class="au-btn au-btn--secondary" href="dashboard-select.html">Sign in</a>
+
+<!--<div class="au-form-group">
+    <div class="au-card au-body">
+<div class="au-body au-body--alt au-card__header">
+    <h4>Sign in using your Digital Identity <span class="badge badge-beta">beta</span></h4>
+</div>
+    <div class="au-card__inner">
+        <a class="au-btn au-btn--secondary" href="loading-mygovid-5.html">Continue with Digital Identity</a><br>
+        <p>You need to <a href="01-createb2c-1.html">create a myCASA account</a>, if you don't have one.<br>
+        Your digital identity email must match your myCASA account email.</p><br>
+        <a href="https://digitalidentity.gov.au" class="casa-external">What is Digital Identity?</a><br>
+                                <a href="https://mygovid.gov.au" class="casa-external">What is myGovID?</a>
+        
+    </div>
+</div>
+                            </div>-->
 
 
 			</div>
