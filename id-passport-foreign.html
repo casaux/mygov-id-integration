@@ -13,7 +13,23 @@
       <script type="text/javascript">
          /* page specific js */
                   $(document).ready(function() {
-       
+        $(".in-australia").on('input', function() {
+         
+         if($("input:radio[name='id-1']:checked").val()=="no"){
+         
+         $("#perm-res").css("display","block");
+            $("#choice").css("display","block");
+             $("#direct").css("display","none");
+   
+         } else {
+         
+         $("#perm-res").css("display","none");
+             $("#choice").css("display","none");
+             $("#direct").css("display","block");
+
+         }
+         
+         });
      
 			 $("#validate a"). click(function(){
 				var radioValue = $("input[name='id']:checked"). val();
@@ -23,6 +39,8 @@
 				 
          });
        
+          
+         
       </script>
      
       </style>
@@ -91,13 +109,30 @@
                 <div class="au-form-group">
 			<form action="#">
 <div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input in-australia" type="radio" name="id-1" id="id-yes-1" value="yes">
+    <label class="au-control-input__text" for="id-yes-1">Yes</span></label>
+</div>
+<div class="au-control-input au-control-input--block">
+  <input class="au-control-input__input in-australia" type="radio" name="id-1" id="id-no-1" value="no">
+  <label class="au-control-input__text" for="id-no-1">No</label>
+</div>
+                </div>	
+                    
+                    <div id="perm-res" style="display: none">
+                     <div class="au-form-group">
+<label class="au-label">Are you an Australian permanent resident?:</label>
+                </div>
+                <div class="au-form-group">
+			<form action="#">
+<div class="au-control-input au-control-input--block">
   <input class="au-control-input__input" type="radio" name="id" id="id-yes" value="id-passport-foreign-details">
     <label class="au-control-input__text" for="id-yes">Yes</span></label>
 </div>
 <div class="au-control-input au-control-input--block">
-  <input class="au-control-input__input" type="radio" name="id" id="id-no" value="id-passport-foreign-perm-res">
+  <input class="au-control-input__input" type="radio" name="id" id="id-no" value="id-passport-foreign-upload">
   <label class="au-control-input__text" for="id-no">No</label>
 </div>
+                         </div>
                 </div>	
                     
                    <!-- <div class="au-form-group">
@@ -148,11 +183,25 @@
 				<div class="au-form-group">
 								<p><a href="#">I don't have any of these documents</a></p>
                     </div>-->
-					
+                    <div id="direct">
+					<div class="au-form-group">
+			
+			
+            <a href="id-passport-foreign-details.html" class="au-btn au-btn--primary">Next</a>
+                        
+				
+
+            
+           
+            </div>
+                    </div>
+                    
+                    <div id="choice" style="display: none">
 					<div class="au-form-group">
 			<div id="validate">
 			
             <a href="#" class="au-btn au-btn--primary">Next</a>
+                        </div>
                         </div>
 				
 
