@@ -12,7 +12,16 @@
       <script type="text/javascript" src="../mycasa-src-4.0/js/jquery.js"></script>
       <script type="text/javascript">
          /* page specific js */
-          
+         $(document).ready(function() {
+       
+     
+			 $("#validate a"). click(function(){
+				var radioValue = $("input[name='radio-ex']:checked"). val();
+				window.location.href=radioValue+".html";
+			 });
+				
+				 
+         });          
 
       </script>
       <style type="text/css">
@@ -116,11 +125,11 @@
                      </div>
                      <div class="au-form-group">
                         <div class="au-control-input au-control-input--block">
-                           <input class="au-control-input__input registration-type" type="radio" name="radio-ex" id="recreational-radio-block" value="recreational">
+                           <input class="au-control-input__input registration-type" type="radio" name="radio-ex" id="recreational-radio-block" value="password-creation-2">
                            <label class="au-control-input__text" for="recreational-radio-block">Yes</label>
                         </div>
                         <div class="au-control-input au-control-input--block">
-                           <input class="au-control-input__input registration-type" type="radio" name="radio-ex" id="commercial-radio-block" value="commercial">
+                           <input class="au-control-input__input registration-type" type="radio" name="radio-ex" id="commercial-radio-block" value="verification-code">
                            <label class="au-control-input__text" for="commercial-radio-block">No</label>
                         </div>
                      </div>
@@ -187,11 +196,16 @@
 				
                 </div>-->
                 
-                <div class="au-form-group">
+<div class="au-form-group">
+			<div id="validate">
+			
+            <a href="#" class="au-btn au-btn--primary">Next</a>
+                        </div>
 				
-				<a class="au-btn" href="password-creation-2.html">Next</a>
 
-                </div>
+            
+           
+            </div>
 
 
 			</div>
@@ -218,7 +232,7 @@
 <script>
                    $(".registration-type").on('input', function() {
          
-         if($("input:radio[name='radio-ex']:checked").val()=="commercial"){
+         if($("input:radio[name='radio-ex']:checked").val()=="verification-code"){
          
          $("#commercial").css("display","block");
          
